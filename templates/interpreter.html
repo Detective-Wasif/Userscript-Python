@@ -1,0 +1,276 @@
+
+<!-- saved from url=(0028)https://userscript.surge.sh/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+pre{
+  line-height:1.2em;
+  background:linear-gradient(180deg,#ccc 0,#ccc 1.2em,#eee 0);
+  background-size:2.4em 2.4em;
+  background-origin:content-box;
+  
+  /* some extra styles*/
+  padding:0 20px;
+  text-align:justify;
+  font-family:calibri,arial,sans-serif;
+}
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+    /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+    div.buttons,.toolbar{
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    margin-bottom: 5px;
+    }
+    .item{
+        width: 50px;
+        height: 50px;
+        display: block;
+        border: 2px solid white;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    </style>
+    
+</head><body>
+<h1 style="font-family:Arial;">UsErScRiPt</h1>
+<button type="button" class="collapsible">Keyboard</button>
+<div class="content">
+<div class="toolbar">
+    <div><h4>Constants / digits</h4></div>
+    <button class="item n0" title="TheNumberZero - literal digit 0" style="background-image: url(&quot;https://i.stack.imgur.com/99cnU.jpg?s=328&amp;g=1&quot;);"></button>
+    <button class="item n1" title="TheNumberOne - literal digit 1" style="background-image: url(&quot;https://www.gravatar.com/avatar/36a26e79b84dcc9989c0dd59ad0d2802?s=328&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item n2" title="Twometer - literal digit 2" style="background-image: url(&quot;https://i.stack.imgur.com/K2jOI.png?s=96&amp;g=1&quot;);"></button>
+    <button class="item n3" title="door_number_three - literal digit 3" style="background-image: url(&quot;https://www.gravatar.com/avatar/799f947c9aa74e27533f5b9c0d71738c?s=96&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item n4" title="NumberFour - literal digit 4" style="background-image: url(&quot;https://www.gravatar.com/avatar/ce51504becca273ac9dbfd060a709fa3?s=328&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item n5" title="number5 - literal digit 5" style="background-image: url(&quot;https://www.gravatar.com/avatar/d678f8a8ee3bd76341e3aa31e2637769?s=328&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item n6" title="Six - literal digit 6" style="background-image: url(&quot;https://www.gravatar.com/avatar/aedd85ba1515f140fb82fdc8c7d417a9?s=96&amp;d=identicon&amp;r=PG&amp;f=1&quot;);"></button>
+    <button class="item n79037662" title="79037662 - literal digit 7" style="background-image: url(&quot;https://www.gravatar.com/avatar/3fd5636e181254646a9da1b04242d042?s=328&amp;d=identicon&amp;r=PG&amp;f=1&quot;);"></button>
+    <button class="item cyoce" title="cyoce - literal digit 8" style="background-image: url(&quot;https://lh5.googleusercontent.com/-sXVlk--Xctg/AAAAAAAAAAI/AAAAAAAAACs/ihhz6fFs3ok/photo.jpg?sz=328&quot;);"></button>
+    <button class="item n9" title="Number9 - literal digit 9" style="background-image: url(&quot;https://www.gravatar.com/avatar/51e93a8afb9ff7b797101d8a5290c891?s=328&amp;d=identicon&amp;r=PG&amp;f=1&quot;);"></button>
+    <button class="item NaN" title="NotANumber - NaN" style="background-image: url(&quot;https://www.gravatar.com/avatar/f9aaacf8fecb199c2a5d05b273aa5a0f?s=328&amp;d=identicon&amp;r=PG&amp;f=1&quot;);"></button>
+    <button class="item easyaspi" title="easyaspi - PI" style="background-image: url(&quot;https://lh6.googleusercontent.com/-2t6xllP2pBA/AAAAAAAAAAI/AAAAAAAAAwg/hnQhZgCj2dQ/photo.jpg?sz=328&quot;);"></button>
+    <button class="item n640" title="640KB - number 640" style="background-image: url(&quot;https://i.stack.imgur.com/733Bl.png?s=328&amp;g=1&quot;);"></button>
+    <button class="item n256" title="Antony_256 - number 256" style="background-image: url(&quot;https://www.gravatar.com/avatar/7c151f73189ca366bd643ba3bbcdd4a7?s=96&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item n1000" title="1000 - number 1000" style="background-image: url(&quot;https://www.gravatar.com/avatar/7b0ae9e011c69ca174615cf23c2125c8?s=328&amp;d=identicon&amp;r=PG&amp;f=1&quot;);"></button>
+</div>
+<div class="toolbar">
+    <div><h4>Logical</h4>
+    </div>
+    <button class="item wasif" title="Wasif - if statement" style="background-image: url(&quot;https://i.stack.imgur.com/DPEmJ.jpg?s=328&amp;g=1&quot;);"></button>
+    <button class="item delfad0r" title="delfad0r - Logical or" style="background-image: url(&quot;https://www.gravatar.com/avatar/b4149ac2e480414c8969aa804c557f39?s=328&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item dennis" title="Dennis - greater than" style="background-image: url(&quot;https://i.stack.imgur.com/rKBkO.jpg?s=48&amp;g=1&quot;);"></button>
+    <button class="item xnor" title="xnor - Logical Xnor" style="background-image: url(&quot;https://i.stack.imgur.com/af3D7.png?s=48&amp;g=1&quot;);"></button>
+    <button class="item martin" title="Martin Ender - Less than" style="background-image: url(&quot;https://www.gravatar.com/avatar/a74d068cb1057e1588cfce3f41023df0?s=48&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item philnotpi" title="PhilNotPi - Logical not" style="background-image: url(&quot;https://i.stack.imgur.com/740Y5.png?s=128&amp;g=1&quot;);"></button>
+
+</div>
+<div class="toolbar">
+    <div><h4>Numeric</h4>    </div>
+    <button class="item downgoat" title="Downgoat - decrement" style="background-image: url(&quot;https://i.stack.imgur.com/mvnmG.png?s=328&amp;g=1&quot;);"></button>
+    <button class="item night2" title="Night2 - Square" style="background-image: url(&quot;https://i.stack.imgur.com/BkwGP.png?s=328&amp;g=1&quot;);"></button>
+    <button class="item chance" title="Chance - Random" style="background-image: url(&quot;https://i.stack.imgur.com/uOIZg.png?s=328&amp;g=1&quot;);"></button>
+    <button class="item minus" title="minus - Subtraction" style="background-image: url(&quot;https://www.gravatar.com/avatar/727f01247168b3e6d3ba518523086b0c?s=96&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item multi" title="multi - Multiplication" style="background-image: url(&quot;https://www.gravatar.com/avatar/186154edbcb0d2e4e06c3a9ea7a9f23c?s=128&amp;d=identicon&amp;r=PG&amp;f=1&quot;);"></button>
+    <button class="item adnan" title="Adnan - Addition" style="background-image: url(&quot;https://i.stack.imgur.com/oub4v.png?s=328&amp;g=1&quot;);"></button>
+    <button class="item root" title="root - Square Root" style="background-image: url(&quot;https://i.stack.imgur.com/kh52m.jpg?s=128&amp;g=1&quot;);"></button>
+    <button class="item cube" title="cubecubed - Cube" style="background-image: url(&quot;https://www.gravatar.com/avatar/d6ef91fed19be0f2e1f2b1e9d9f86a86?s=128&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item math" title="math - Cosine" style="background-image: url(&quot;https://i.stack.imgur.com/wGfET.png?s=328&amp;g=1&quot;);"></button>
+    <button class="item sine" title="Sine_ - Sine" style="background-image: url(&quot;https://i.stack.imgur.com/t6UM0.jpg?s=96&amp;g=1&quot;);"></button>
+    <button class="item factorial" title="Factorialtime - factorial" style="background-image: url(&quot;https://www.gravatar.com/avatar/1516b846f6b5f2032756f84b0f7c6288?s=96&amp;d=identicon&amp;r=PG&amp;f=1&quot;);"></button>
+    <button class="item arnauld" title="Arnauld - bitwise and" style="background-image: url(&quot;https://i.stack.imgur.com/HifFH.jpg?s=328&amp;g=1&quot;);"></button>
+    <button class="item adam" title="Adam - increment" style="background-image: url(&quot;https://i.stack.imgur.com/DObmx.jpg?s=64&amp;g=1&quot;);"></button>
+    <button class="item doorknob" title="Doorknob - division" style="background-image: url(&quot;https://i.stack.imgur.com/pqRUk.png?s=48&amp;g=1&quot;);"></button>
+    <button class="item tangent" title="tangentstorm - Tangent" style="background-image: url(&quot;https://www.gravatar.com/avatar/3bd8922fc2abf42b857927ec447b64f8?s=328&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item log" title="log - Log (base 10)" style="background-image: url(&quot;https://www.gravatar.com/avatar/8a48df38169231bf0f2d4d6676d6f34d?s=96&amp;d=identicon&amp;r=PG&amp;f=1&quot;);"></button>
+    <button class="item lcm" title="lcm - Lowest common multiple" style="background-image: url(&quot;https://www.gravatar.com/avatar/be3675761e226b08eced3d347f6708a1?s=328&amp;d=identicon&amp;r=PG&quot;);"></button>
+
+
+</div>
+<div class="toolbar">
+    <div><h4>Other</h4>    </div>
+    <button class="item lyxal" title="Lyxal - output" style="background-image: url(&quot;https://i.stack.imgur.com/B5QC7.png?s=328&amp;g=1&quot;);"></button>
+    <button class="item hyper" title="HyperNeutrino - Function delimiter" style="background-image: url(&quot;https://i.stack.imgur.com/Afz3T.png?s=128&amp;g=1&quot;);"></button>
+    <button class="item redwolf" title="Redwolf Programs - Input" style="background-image: url(&quot;https://i.stack.imgur.com/tISMB.png?s=328&amp;g=1&quot;);"></button>
+    <button class="item caird" title="caird coinheringaahing - Create user" style="background-image: url(&quot;https://i.stack.imgur.com/7mQxh.jpg?s=32&amp;g=1&quot;);"></button>
+    <button class="item unrelated" title="Unrelated String - String delimiter" style="background-image: url(&quot;https://lh6.googleusercontent.com/-SaPrY09tpf4/AAAAAAAAAAI/AAAAAAAAAGI/GzfKjT9bA-k/photo.jpg?sz=128&quot;);"></button>
+    <button class="item pxeger" title="pxeger - Regexp delimiter" style="background-image: url(&quot;https://www.gravatar.com/avatar/4d63e5b18af4433f673101d8589a4c59?s=64&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item deadcode" title="Deadcode - End program" style="background-image: url(&quot;https://i.stack.imgur.com/U6GWq.jpg?s=64&amp;g=1&quot;);"></button>
+    <button class="item ausername" title="A username - Username property access" style="background-image: url(&quot;https://www.gravatar.com/avatar/abc166197315cb136599b2b26f2c13c9?s=32&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item user" title="user - Call function" style="background-image: url(&quot;https://i.stack.imgur.com/uvLkR.png?s=32&amp;g=1&quot;);"></button>
+    <button class="item digital" title="Digital Trauma - Loop delimiter" style="background-image: url(&quot;https://i.stack.imgur.com/u7x2i.png?s=48&amp;g=1&quot;);"></button>
+    <button class="item luis" title="Luis Mendo - Copy user" style="background-image: url(&quot;https://i.stack.imgur.com/rFMSx.png?s=48&amp;g=1&quot;);"></button>
+    <button class="item del" title="Deleted user - Delete user" style="background-image: url(&quot;del.svg&quot;);"></button>
+    <button class="item razetime" title="Razetime - Split string" style="background-image: url(&quot;https://lh4.googleusercontent.com/-GTz-_9seXd8/AAAAAAAAAAI/AAAAAAAAAqE/z93C03-vcMs/photo.jpg?sz=128&quot;);"></button>
+
+
+</div>
+<div class="toolbar">
+    <div><h4>Unimplemented</h4>
+    </div>
+    <button class="item bubbler" style="background-image: url(&quot;https://i.stack.imgur.com/LZVYQ.png?s=32&amp;g=1&quot;);"></button>
+    <button class="item joking" style="background-image: url(&quot;https://www.gravatar.com/avatar/0a17269c9e3b10803071bef37aeee158?s=32&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item neil" style="background-image: url(&quot;https://www.gravatar.com/avatar/4538cb9de4914a875d13da50c7c406ad?s=64&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item wezl" style="background-image: url(&quot;https://i.stack.imgur.com/3fAdQ.gif?s=256&amp;g=1&quot;);"></button>
+    <button class="item dominic" style="background-image: url(&quot;https://i.stack.imgur.com/YIXFx.jpg?s=328&amp;g=1&quot;);"></button>
+    <button class="item tsh" style="background-image: url(&quot;https://www.gravatar.com/avatar/8ca30e4fb6dc5eb9ff50af16807e620e?s=328&amp;d=identicon&amp;r=PG&quot;);"></button>
+    <button class="item jonah" style="background-image: url(&quot;https://i.stack.imgur.com/Dseeq.jpg?s=328&amp;g=1&quot;);"></button>
+    <button class="item jonathan" style="background-image: url(&quot;https://i.stack.imgur.com/fIyIX.jpg?s=328&amp;g=1&quot;);"></button>
+    <button class="item kevin" style="background-image: url(&quot;https://i.stack.imgur.com/MefSP.jpg?s=48&amp;g=1&quot;);"></button>
+    <button class="item calvin" style="background-image: url(&quot;https://i.stack.imgur.com/5pZVr.png?s=48&amp;g=1&quot;);"></button>
+</div>
+</div>
+<br /><br />
+<div class="buttons">
+</div>
+<br /><br />
+<form action="{{ url_for("gfg")}}" method="post">
+<button onclick="getPng()">Download as PNG</button>
+<input type="text" id="f***" name="code"></input>
+<input type="submit" value="Compile"></input>
+</form>
+
+    <script>
+    var prog = '';
+    var data = {
+        'n0': 0,
+        'n1':1,
+        'n2':2,
+        'n3':3,
+        'n4':4,
+        'n5':5,
+        'n6':6,
+        'n79037662':7,
+        'cyoce':8,
+        'n9':9,
+        'NaN': 'N',
+        'easyaspi': 'π',
+        'n640': 'S',
+        'n256': 'F',
+        'n1000': 'K',
+        'unrelated': '"',
+        'deadcode': 'H',
+        'hyper': 'λ',
+        'pxeger': '/',
+        'wasif': '?',
+        'delfador': '∨',
+        'xnor': '@',
+        'night2': '²',
+        'downgoat':'↓',
+        'dennis':'>',
+        'lyxal': '→',
+        'redwolf': '←',
+        'caird': 'U',
+        'chance': '⚅',
+        'adnan': '+',
+        'minus':'-',
+        'multi':'*',
+        'root': '√',
+        'cube': '³',
+        'math': 'C',
+        'sine': 's',
+        'factorial':'!',
+        'user':'f',
+        'luis': 'D',
+        'digital': 'L',
+        'arnauld': '&',
+        'del': '^',
+        'martin': '<',
+        'adam': '↑',
+        'doorknob': '÷',
+        'tangent': 'T',
+        'log': 'l',
+        'lcm': '⊔',
+        'ausername': 'u'
+    }
+    function add(event){
+        var d = document.createElement('img');
+        d.classList.add('item');
+        d.src = urls[event.target.classList[1]];
+        d.dataClass = event.target.classList[1]
+        d.title = event.target.title;
+        d.addEventListener('click', event => {
+            event.target.remove();            	
+            prog = '';
+            for(var x = 1; x < document.getElementsByClassName('buttons')[0].childNodes.length; x++){
+                prog += data[document.getElementsByClassName('buttons')[0].childNodes[x].dataClass] ?? '';
+            }
+        });
+        document.getElementsByClassName('buttons')[0].appendChild(d);
+        prog += data[event.target.classList[1]] ?? '';
+        document.getElementById("f***").value = prog;
+    }
+    function getPng(width=prompt('Width in images?'),size = prompt('Image size in pixels?')){
+        if(!size || !width) return;
+        var c = document.createElement('canvas'), ctx = c.getContext('2d');
+        c.width = width * size;
+        c.height = Math.ceil(prog.length / width) * size;
+        for(var x = 1; x < document.getElementsByClassName('buttons')[0].childNodes.length; x++){
+            ctx.drawImage(document.getElementsByClassName('buttons')[0].childNodes[x],size * ((x-1)%width),size * Math.floor((x-1)/width),size,size);
+        }
+        document.body.appendChild(c);
+        c.onclick = event => c.remove();
+    }
+        var urls = {
+        lyxal:'https://i.stack.imgur.com/B5QC7.png?s=328&g=1',hyper:'https://i.stack.imgur.com/Afz3T.png?s=128&g=1',redwolf:'https://i.stack.imgur.com/tISMB.png?s=328&g=1',caird:'https://i.stack.imgur.com/7mQxh.jpg?s=32&g=1',unrelated:'https://lh6.googleusercontent.com/-SaPrY09tpf4/AAAAAAAAAAI/AAAAAAAAAGI/GzfKjT9bA-k/photo.jpg?sz=128',bubbler:'https://i.stack.imgur.com/LZVYQ.png?s=32&g=1',joking:'https://www.gravatar.com/avatar/0a17269c9e3b10803071bef37aeee158?s=32&d=identicon&r=PG',razetime:'https://lh4.googleusercontent.com/-GTz-_9seXd8/AAAAAAAAAAI/AAAAAAAAAqE/z93C03-vcMs/photo.jpg?sz=128',adam:'https://i.stack.imgur.com/DObmx.jpg?s=64&g=1',neil:'https://www.gravatar.com/avatar/4538cb9de4914a875d13da50c7c406ad?s=64&d=identicon&r=PG',pxeger:'https://www.gravatar.com/avatar/4d63e5b18af4433f673101d8589a4c59?s=64&d=identicon&r=PG',user:'https://i.stack.imgur.com/uvLkR.png?s=32&g=1',deadcode:'https://i.stack.imgur.com/U6GWq.jpg?s=64&g=1',wezl:'https://i.stack.imgur.com/3fAdQ.gif?s=256&g=1',math:'https://i.stack.imgur.com/wGfET.png?s=328&g=1',n0:'https://i.stack.imgur.com/99cnU.jpg?s=328&g=1',n1:'https://www.gravatar.com/avatar/36a26e79b84dcc9989c0dd59ad0d2802?s=328&d=identicon&r=PG',n2:'https://i.stack.imgur.com/K2jOI.png?s=96&g=1',n3:'https://www.gravatar.com/avatar/799f947c9aa74e27533f5b9c0d71738c?s=96&d=identicon&r=PG',n4:'https://www.gravatar.com/avatar/ce51504becca273ac9dbfd060a709fa3?s=328&d=identicon&r=PG',n5:'https://www.gravatar.com/avatar/d678f8a8ee3bd76341e3aa31e2637769?s=328&d=identicon&r=PG',n6:'https://www.gravatar.com/avatar/aedd85ba1515f140fb82fdc8c7d417a9?s=96&d=identicon&r=PG&f=1',n79037662:'https://www.gravatar.com/avatar/3fd5636e181254646a9da1b04242d042?s=328&d=identicon&r=PG&f=1',cyoce:'https://www.gravatar.com/avatar/5481f5f7c5a267ff2179813887cf5a15?s=96&d=identicon&r=PG',n9:'https://www.gravatar.com/avatar/51e93a8afb9ff7b797101d8a5290c891?s=328&d=identicon&r=PG&f=1',NaN:'https://www.gravatar.com/avatar/f9aaacf8fecb199c2a5d05b273aa5a0f?s=328&d=identicon&r=PG&f=1',n640:'https://i.stack.imgur.com/733Bl.png?s=328&g=1',n256:'https://www.gravatar.com/avatar/7c151f73189ca366bd643ba3bbcdd4a7?s=96&d=identicon&r=PG',n1000:'https://www.gravatar.com/avatar/7b0ae9e011c69ca174615cf23c2125c8?s=328&d=identicon&r=PG&f=1',wasif:'https://i.stack.imgur.com/DPEmJ.jpg?s=328&g=1',delfad0r:'https://www.gravatar.com/avatar/b4149ac2e480414c8969aa804c557f39?s=328&d=identicon&r=PG',arnauld:'https://i.stack.imgur.com/HifFH.jpg?s=328&g=1',dominic:'https://i.stack.imgur.com/YIXFx.jpg?s=328&g=1',tsh:'https://www.gravatar.com/avatar/8ca30e4fb6dc5eb9ff50af16807e620e?s=328&d=identicon&r=PG',jonah:'https://i.stack.imgur.com/Dseeq.jpg?s=328&g=1',jonathan:'https://i.stack.imgur.com/fIyIX.jpg?s=328&g=1',dennis:'https://i.stack.imgur.com/rKBkO.jpg?s=48&g=1',martin:'https://www.gravatar.com/avatar/a74d068cb1057e1588cfce3f41023df0?s=48&d=identicon&r=PG',xnor:'https://i.stack.imgur.com/af3D7.png?s=48&g=1',luis:'https://i.stack.imgur.com/rFMSx.png?s=48&g=1',kevin:'https://i.stack.imgur.com/MefSP.jpg?s=48&g=1',calvin:'https://i.stack.imgur.com/5pZVr.png?s=48&g=1',doorknob:'https://i.stack.imgur.com/pqRUk.png?s=48&g=1',digital:'https://i.stack.imgur.com/u7x2i.png?s=48&g=1',adnan:'https://i.stack.imgur.com/oub4v.png?s=328&g=1',easyaspi:'https://lh6.googleusercontent.com/-2t6xllP2pBA/AAAAAAAAAAI/AAAAAAAAAwg/hnQhZgCj2dQ/photo.jpg?sz=328',downgoat:'https://i.stack.imgur.com/mvnmG.png?s=328&g=1',cyoce:'https://lh5.googleusercontent.com/-sXVlk--Xctg/AAAAAAAAAAI/AAAAAAAAACs/ihhz6fFs3ok/photo.jpg?sz=328',night2:'https://i.stack.imgur.com/BkwGP.png?s=328&g=1',chance:'https://i.stack.imgur.com/uOIZg.png?s=328&g=1',ausername:'https://www.gravatar.com/avatar/abc166197315cb136599b2b26f2c13c9?s=32&d=identicon&r=PG',minus:'https://www.gravatar.com/avatar/727f01247168b3e6d3ba518523086b0c?s=96&d=identicon&r=PG',multi:'https://www.gravatar.com/avatar/186154edbcb0d2e4e06c3a9ea7a9f23c?s=128&d=identicon&r=PG&f=1',root:'https://i.stack.imgur.com/kh52m.jpg?s=128&g=1',cube:'https://www.gravatar.com/avatar/d6ef91fed19be0f2e1f2b1e9d9f86a86?s=128&d=identicon&r=PG',sine:'https://i.stack.imgur.com/t6UM0.jpg?s=96&g=1',tangent:'https://www.gravatar.com/avatar/3bd8922fc2abf42b857927ec447b64f8?s=328&d=identicon&r=PG',log:'https://www.gravatar.com/avatar/8a48df38169231bf0f2d4d6676d6f34d?s=96&d=identicon&r=PG&f=1',lcm: 'https://www.gravatar.com/avatar/be3675761e226b08eced3d347f6708a1?s=328&d=identicon&r=PG',del: 'del.svg', factorial: 'https://www.gravatar.com/avatar/1516b846f6b5f2032756f84b0f7c6288?s=96&d=identicon&r=PG&f=1',philnotpi: 'https://i.stack.imgur.com/740Y5.png?s=128&g=1'
+    }
+    for(var x = 0; x < document.querySelectorAll('.toolbar button').length; x++){
+        document.querySelectorAll('.toolbar button')[x].onclick = event => add(event);
+    }
+    for(var x in urls){
+        document.querySelector('.'+x).style.backgroundImage = `url('${urls[x]}')`
+    }
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+    </script>
+
+<h3 style="font-family:Arial">Output</h3>
+<hr />
+<pre>{{ output }}</pre>
+    
+</body></html>
