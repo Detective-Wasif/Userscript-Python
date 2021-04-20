@@ -6,8 +6,9 @@ This is a python+flask port (Frontend is written with HTML).
 
 Regular commits will be made. Anyone can add pull requests
 
-3 steps are done:
+4 steps are done:
 
 1. HTML frontend
 2. Flask server
 3. Empty program FizzBuzz
+4. User Clas (Still working on it, mostly done, user.py committed here)
