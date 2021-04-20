@@ -11,4 +11,4 @@ Regular commits will be made. Anyone can add pull requests
 1. HTML frontend
 2. Flask server
 3. Empty program FizzBuzz
-4. User Clas (Still working on it, mostly done, user.py committed here)
+4. User Class (Still working on it, mostly done, user.py committed here)
